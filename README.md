@@ -74,7 +74,14 @@ The variable `SYSTEM_PROMPT` sets the system message used to provide context for
 Here's an example of how to use the code:
 
 ```shell
-python demo.py "Refactor this code for clarity and reduce repetitions by incorporating additional functions"
+python3 generate_python.py "Make a script that:
+- Print 'Hello, Name'
+- 'Name' is the name of the person provided in the first command line argument
+- If they don't include a name, print World
+- If the name is not properly capitalized, capitalize the first letter
+- Make sure the name is alpha characters only.  If not, fix it.
+- Don't accept names longer than 100 characters
+"
 ```
 
 This command will refactor the provided code for clarity and reduce repetitions by incorporating additional functions.
